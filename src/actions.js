@@ -16,5 +16,4 @@ export const requestRobots = () => (dispatch) => {
     .then(response=> response.json())
     .then(data => dispatch({type: REQUEST_ROBOTS_SUCCESS, payload: data}))
     .catch(err => dispatch({type: REQUEST_ROBOTS_FAILED, payload: err}))
-
 }
